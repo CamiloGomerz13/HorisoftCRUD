@@ -1,0 +1,18 @@
+///////////////////////////////////////////////////
+
+- Modificar el archivo "db.sql" en la parte de la contraseña si es necesario, 
+para autenticar correctamente( por defecto está la contraseña "root")
+
+//////////////
+Installation
+//////////////
+
+- Instalar los recursos con el comando "npm install".
+
+////////////////////
+Ejecucion del server
+////////////////////
+
+- Ejecutar el comando "node src/index.js" para iniciar el backend
+
+/////////////////////////////////////////////////////

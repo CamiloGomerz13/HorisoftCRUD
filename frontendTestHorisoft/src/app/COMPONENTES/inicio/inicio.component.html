@@ -1,0 +1,49 @@
+<div class="container">
+  <h1 style="text-align: center;">LISTA DE USUARIOS</h1>
+
+  <button routerLink="/add" type="button" class="btn btn-dark">
+    <span style="font-size:20px">
+      +
+    </span>
+    Agregar persona
+  </button>
+<div class="card" style="margin-top: 2pc;">
+
+  <table class="table" style="margin-top: 10px;">
+    <thead>
+      <tr>
+        <th scope="col">Idendificacion</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Fecha de Nac.</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Opciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of ListarUsuarios">
+
+        <th>{{user.number_identification}}</th>
+        <td>{{user.full_name}}</td>
+        <td>{{user.full_last_name}}</td>
+        <td>{{user.birthdate}}</td>
+        <td >{{user.sex}}</td>
+        
+        
+        <td>
+          
+        
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button (click)="modificar(user.id_person)" type="button" class="btn btn-success"><span class="iconify" data-icon="bx:bx-edit-alt"></span></button>
+            <button (click)="eliminar(user.id_person)" type="button" class="btn btn-danger"><span class="iconify" data-icon="bx:bx-trash"></span></button>
+          </div>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size: 10px;" class="d-flex justify-content-center">  Prueba técnica - Horisoft  </p>
+</div>
+
+
+</div>

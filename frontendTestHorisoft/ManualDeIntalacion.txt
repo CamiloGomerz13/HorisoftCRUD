@@ -1,0 +1,11 @@
+////////////////////////////////////////////
+
+Manual de instalación de instalación
+
+1- Ejecutar el comando "npm i"
+
+2- ejecutar el comando " ng serve -o" para ejecutar el servidor y abrir automaticamente el navegador de
+
+3- Test it ! 
+
+/////////////////////////////////////////////

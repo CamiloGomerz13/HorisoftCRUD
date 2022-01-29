@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="img">
+        <img src="https://horisoft.co/soporte/logo.php">
+    </div>
+    <div class="row">
+
+        <div class="card">
+
+            <div class="col-7">
+                <div class="card-body" style="width:100%">
+
+                    <form [formGroup]="testForm">
+
+
+
+
+
+                        <div class="row">
+
+                            <div class="col-6">
+
+                                <label class="form-label">id persona</label>
+                                <input [(ngModel)]="user.id_person" style="width:100%" formControlName="idPerson"
+                                    type="text" class="form-control" name="person">
+                            </div>
+
+                            <div class="col-6">
+                                <label class="form-label">N° identificacion</label>
+                                <input [(ngModel)]="user.number_identification" formControlName="numberIdentification"
+                                    style="width:100%" type="text" class="form-control" name="nombre">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Nombres</label>
+                                <input [(ngModel)]="user.full_name" type="text" style="width:100%"
+                                    formControlName="fullName" class="form-control" name="nombre">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Apellidos</label>
+                                <input [(ngModel)]="user.full_last_name" type="text" formControlName="fullLastName"
+                                    style="width:100%" class="form-control" name="nombre">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Fecha de nacimiento</label>
+                                <input [(ngModel)]="user.birthdate" type="date" formControlName="birthdate"
+                                    style="width:100%" class="form-control" name="nombre">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label">Sexo</label>
+
+                                <select style="width:100%" [(ngModel)]="user.sex" placeholder="Seleccionar sexo*"
+                                    class="form-select" formControlName="sex" aria-label="Default select example">
+
+                                    <option *ngFor="let op of options" [value]="op.value">{{op.view}}</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="d-flex justify-content-center" style="margin-top:2pc">
+
+
+                            <button (click)="agregar()" class="btn btn-success" color="success"> <span class="iconify"
+                                    data-icon="bx:bx-plus-circle"></span> Agregar</button>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
